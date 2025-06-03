@@ -7,13 +7,24 @@
 
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+}
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+}
+
 class LoginViewController: UIViewController {
+    
+    let titleLabel = UILabel()
+    let subtitleLabel = UILabel()
     
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
-    let titleLabel = UILabel()
-    let subtitleLabel = UILabel()
+    
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String?{
         return loginView.userNameTextField.text
@@ -27,6 +38,11 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        signInButton.configuration?.showsActivityIndicator = false
     }
 }
 
@@ -119,16 +135,22 @@ extension LoginViewController {
             return
         }
         
-        if username.isEmpty || password.isEmpty {
-            configureView(withMessage: "Username / password cannot be blank")
-            return
+//        if username.isEmpty || password.isEmpty {
+//            configureView(withMessage: "Username / password cannot be blank")
+//            return
+//        }
+        if username == "" || password == "" {
+            signInButton.configuration?.showsActivityIndicator = true
+            delegate?.didLogin()
+        } else{
+            configureView(withMessage: "Incorret username / password")
         }
         
-        if username == "Admin" && password == "Admin" {
-            signInButton.configuration?.showsActivityIndicator = true
-        } else{
-            configureView(withMessage: "Invalid username or password")
-        }
+//        if username == "Admin" && password == "Admin" {
+//            signInButton.configuration?.showsActivityIndicator = true
+//        } else{
+//            configureView(withMessage: "Invalid username or password")
+//        }
     }
     
     private func configureView(withMessage message: String) {
