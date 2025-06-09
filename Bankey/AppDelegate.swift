@@ -14,65 +14,72 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let loginViewController = LoginViewController()
-    let onboardingConteinerViewController = OnboardingContainerViewController()
+    let onboardingViewController = OnboardingContainerViewController()
     let mainViewController = MainViewController()
-    
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
-        
+                
         loginViewController.delegate = self
-        onboardingConteinerViewController.delegate = self
-        
-        let vc = mainViewController
-        vc.setStatusBar()
+        onboardingViewController.delegate = self
 
-        UINavigationBar.appearance().isTranslucent = false
-        UINavigationBar.appearance().backgroundColor = appColor
-            
-        window?.rootViewController = vc
-            
+        displayLogin()
         return true
     }
+
+    private func displayLogin() {
+        setRootViewController(loginViewController)
+    }
+
+    private func displayNextScreen() {
+        if LocalState.hasOnboarded {
+            prepMainView()
+            setRootViewController(mainViewController)
+        } else {
+            setRootViewController(onboardingViewController)
+        }
+    }
     
+    private func prepMainView() {
+        mainViewController.setStatusBar()
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().backgroundColor = appColor
+    }
 }
 
-extension AppDelegate{
+extension AppDelegate {
     func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
         guard animated, let window = self.window else {
             self.window?.rootViewController = vc
             self.window?.makeKeyAndVisible()
             return
         }
-        
+
         window.rootViewController = vc
         window.makeKeyAndVisible()
         UIView.transition(with: window,
-                          duration: 0.7,
+                          duration: 0.3,
                           options: .transitionCrossDissolve,
                           animations: nil,
                           completion: nil)
-        
     }
 }
 
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        if LocalState.hasOnboarded{
-            setRootViewController(mainViewController)
-
-        } else {
-            setRootViewController(onboardingConteinerViewController)
-        }
+        displayNextScreen()
     }
 }
 
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
-        setRootViewController(mainViewController)    }
+        prepMainView()
+        setRootViewController(mainViewController)
+    }
 }
 
 extension AppDelegate: LogoutDelegate {
