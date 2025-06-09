@@ -13,10 +13,14 @@
 		093063292DF1E425009CFC98 /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093063282DF1E425009CFC98 /* AccountSummaryHeaderView.xib */; };
 		0931F4A52DF09E28004E3728 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931F4A42DF09E28004E3728 /* UIViewController+Utils.swift */; };
 		0931F4A72DF09F61004E3728 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931F4A62DF09F61004E3728 /* MainViewController.swift */; };
+		093249272DF74AFF00CC5856 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093249262DF74AFF00CC5856 /* NSNotificationName.swift */; };
+		093249282DF74AFF00CC5856 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093249262DF74AFF00CC5856 /* NSNotificationName.swift */; };
+		0932492A2DF74EE700CC5856 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093249292DF74EE700CC5856 /* UITextField+SecureToggle.swift */; };
+		0932492B2DF74EE700CC5856 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093249292DF74EE700CC5856 /* UITextField+SecureToggle.swift */; };
 		0971F6672DE758300059A91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971F6662DE758300059A91F /* AppDelegate.swift */; };
 		0971F66B2DE758300059A91F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971F66A2DE758300059A91F /* LoginViewController.swift */; };
 		0971F6812DE76EFD0059A91F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971F6802DE76EFD0059A91F /* LoginView.swift */; };
-		097B89282DF4C0080068234A /* DecimalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B89272DF4C0080068234A /* DecimalUtil.swift */; };
+		097B89282DF4C0080068234A /* Decimal+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B89272DF4C0080068234A /* Decimal+Util.swift */; };
 		097B892A2DF4C0780068234A /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B89292DF4C0780068234A /* CurrencyFormatter.swift */; };
 		09D252DE2DEF506D00E2EB82 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D252DD2DEF506D00E2EB82 /* DummyViewController.swift */; };
 		09D252E12DEF614300E2EB82 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D252E02DEF614300E2EB82 /* LocalState.swift */; };
@@ -42,12 +46,14 @@
 		0931F4A42DF09E28004E3728 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
 		0931F4A62DF09F61004E3728 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		093249192DF72C3B00CC5856 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		093249262DF74AFF00CC5856 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
+		093249292DF74EE700CC5856 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		0971F6632DE758300059A91F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0971F6662DE758300059A91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0971F66A2DE758300059A91F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0971F6802DE76EFD0059A91F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		0971F6852DE788050059A91F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		097B89272DF4C0080068234A /* DecimalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtil.swift; sourceTree = "<group>"; };
+		097B89272DF4C0080068234A /* Decimal+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Util.swift"; sourceTree = "<group>"; };
 		097B89292DF4C0780068234A /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		09D252DD2DEF506D00E2EB82 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		09D252E02DEF614300E2EB82 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
@@ -149,8 +155,8 @@
 		0971F67F2DE76E970059A91F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0971F66A2DE758300059A91F /* LoginViewController.swift */,
 				0971F6802DE76EFD0059A91F /* LoginView.swift */,
+				0971F66A2DE758300059A91F /* LoginViewController.swift */,
 				09D252DD2DEF506D00E2EB82 /* DummyViewController.swift */,
 			);
 			path = Login;
@@ -159,10 +165,12 @@
 		09D252DF2DEF610D00E2EB82 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				09D252E02DEF614300E2EB82 /* LocalState.swift */,
 				0931F4A42DF09E28004E3728 /* UIViewController+Utils.swift */,
-				097B89272DF4C0080068234A /* DecimalUtil.swift */,
+				097B89272DF4C0080068234A /* Decimal+Util.swift */,
+				093249292DF74EE700CC5856 /* UITextField+SecureToggle.swift */,
+				09D252E02DEF614300E2EB82 /* LocalState.swift */,
 				097B89292DF4C0780068234A /* CurrencyFormatter.swift */,
+				093249262DF74AFF00CC5856 /* NSNotificationName.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -287,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093249282DF74AFF00CC5856 /* NSNotificationName.swift in Sources */,
+				0932492B2DF74EE700CC5856 /* UITextField+SecureToggle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,10 +307,12 @@
 				0931F4A52DF09E28004E3728 /* UIViewController+Utils.swift in Sources */,
 				0971F6812DE76EFD0059A91F /* LoginView.swift in Sources */,
 				09D252E12DEF614300E2EB82 /* LocalState.swift in Sources */,
-				097B89282DF4C0080068234A /* DecimalUtil.swift in Sources */,
+				097B89282DF4C0080068234A /* Decimal+Util.swift in Sources */,
+				0932492A2DF74EE700CC5856 /* UITextField+SecureToggle.swift in Sources */,
 				093063272DF1E3BF009CFC98 /* AccountSummaryHeaderView.swift in Sources */,
 				097B892A2DF4C0780068234A /* CurrencyFormatter.swift in Sources */,
 				09D252DE2DEF506D00E2EB82 /* DummyViewController.swift in Sources */,
+				093249272DF74AFF00CC5856 /* NSNotificationName.swift in Sources */,
 				0971F66B2DE758300059A91F /* LoginViewController.swift in Sources */,
 				0926C13B2DF3351200FC4A07 /* AccountSummaryCell.swift in Sources */,
 				09FF01E72DEDFE3800D0616C /* OnboardingViewController.swift in Sources */,
