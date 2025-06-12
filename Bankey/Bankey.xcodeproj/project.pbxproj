@@ -20,6 +20,8 @@
 		0932492B2DF74EE700CC5856 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093249292DF74EE700CC5856 /* UITextField+SecureToggle.swift */; };
 		093F3B242DFA060A00B96E81 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F3B232DFA060A00B96E81 /* Date+Utils.swift */; };
 		093F3B262DFA075700B96E81 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093F3B252DFA075700B96E81 /* AccountSummaryViewController+Networking.swift */; };
+		0960F7172DFB4C170006D247 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0960F7162DFB4C170006D247 /* SkeletonLoadable.swift */; };
+		0960F7192DFB4CDD0006D247 /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0960F7182DFB4CDD0006D247 /* SkeletonCell.swift */; };
 		0971F6672DE758300059A91F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971F6662DE758300059A91F /* AppDelegate.swift */; };
 		0971F66B2DE758300059A91F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971F66A2DE758300059A91F /* LoginViewController.swift */; };
 		0971F6812DE76EFD0059A91F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971F6802DE76EFD0059A91F /* LoginView.swift */; };
@@ -54,6 +56,8 @@
 		093249292DF74EE700CC5856 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		093F3B232DFA060A00B96E81 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		093F3B252DFA075700B96E81 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		0960F7162DFB4C170006D247 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		0960F7182DFB4CDD0006D247 /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		0971F6632DE758300059A91F /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0971F6662DE758300059A91F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0971F66A2DE758300059A91F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				0926C13A2DF3351200FC4A07 /* AccountSummaryCell.swift */,
+				0960F7162DFB4C170006D247 /* SkeletonLoadable.swift */,
+				0960F7182DFB4CDD0006D247 /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0931F4A52DF09E28004E3728 /* UIViewController+Utils.swift in Sources */,
+				0960F7192DFB4CDD0006D247 /* SkeletonCell.swift in Sources */,
 				093F3B242DFA060A00B96E81 /* Date+Utils.swift in Sources */,
 				0971F6812DE76EFD0059A91F /* LoginView.swift in Sources */,
 				09D252E12DEF614300E2EB82 /* LocalState.swift in Sources */,
@@ -339,6 +346,7 @@
 				093063252DF1DD55009CFC98 /* AccountSummaryViewController.swift in Sources */,
 				09FF01E52DEDF5DF00D0616C /* OnboardingContainerViewViewController.swift in Sources */,
 				0971F6672DE758300059A91F /* AppDelegate.swift in Sources */,
+				0960F7172DFB4C170006D247 /* SkeletonLoadable.swift in Sources */,
 				093F3B262DFA075700B96E81 /* AccountSummaryViewController+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
