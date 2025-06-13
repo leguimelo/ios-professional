@@ -29,6 +29,8 @@
 		097B892A2DF4C0780068234A /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097B89292DF4C0780068234A /* CurrencyFormatter.swift */; };
 		09D252DE2DEF506D00E2EB82 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D252DD2DEF506D00E2EB82 /* DummyViewController.swift */; };
 		09D252E12DEF614300E2EB82 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D252E02DEF614300E2EB82 /* LocalState.swift */; };
+		09E19B552DFC946B00F5A1DC /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E19B542DFC946B00F5A1DC /* ProfileManager.swift */; };
+		09E19B572DFC948300F5A1DC /* ProfileManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E19B562DFC948300F5A1DC /* ProfileManageable.swift */; };
 		09FF01E52DEDF5DF00D0616C /* OnboardingContainerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FF01E42DEDF5DF00D0616C /* OnboardingContainerViewViewController.swift */; };
 		09FF01E72DEDFE3800D0616C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FF01E62DEDFE3800D0616C /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		097B89292DF4C0780068234A /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		09D252DD2DEF506D00E2EB82 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		09D252E02DEF614300E2EB82 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		09E19B542DFC946B00F5A1DC /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		09E19B562DFC948300F5A1DC /* ProfileManageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageable.swift; sourceTree = "<group>"; };
 		09FF01E42DEDF5DF00D0616C /* OnboardingContainerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewViewController.swift; sourceTree = "<group>"; };
 		09FF01E62DEDFE3800D0616C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +140,7 @@
 				093F3B252DFA075700B96E81 /* AccountSummaryViewController+Networking.swift */,
 				0926C1382DF3347000FC4A07 /* Header */,
 				0926C1392DF334AD00FC4A07 /* Cells */,
+				09E19B532DFC940500F5A1DC /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -196,6 +201,15 @@
 				093F3B232DFA060A00B96E81 /* Date+Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		09E19B532DFC940500F5A1DC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				09E19B542DFC946B00F5A1DC /* ProfileManager.swift */,
+				09E19B562DFC948300F5A1DC /* ProfileManageable.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		09FF01E32DEDF31400D0616C /* Onboarding */ = {
@@ -330,6 +344,7 @@
 				0931F4A52DF09E28004E3728 /* UIViewController+Utils.swift in Sources */,
 				0960F7192DFB4CDD0006D247 /* SkeletonCell.swift in Sources */,
 				093F3B242DFA060A00B96E81 /* Date+Utils.swift in Sources */,
+				09E19B552DFC946B00F5A1DC /* ProfileManager.swift in Sources */,
 				0971F6812DE76EFD0059A91F /* LoginView.swift in Sources */,
 				09D252E12DEF614300E2EB82 /* LocalState.swift in Sources */,
 				097B89282DF4C0080068234A /* Decimal+Util.swift in Sources */,
@@ -337,6 +352,7 @@
 				093063272DF1E3BF009CFC98 /* AccountSummaryHeaderView.swift in Sources */,
 				097B892A2DF4C0780068234A /* CurrencyFormatter.swift in Sources */,
 				09D252DE2DEF506D00E2EB82 /* DummyViewController.swift in Sources */,
+				09E19B572DFC948300F5A1DC /* ProfileManageable.swift in Sources */,
 				093249272DF74AFF00CC5856 /* NSNotificationName.swift in Sources */,
 				0971F66B2DE758300059A91F /* LoginViewController.swift in Sources */,
 				092CDD672DF8B0E900E53382 /* ShakeyBellView.swift in Sources */,
