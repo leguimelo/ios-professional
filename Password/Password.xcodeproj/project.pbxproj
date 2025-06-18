@@ -29,6 +29,11 @@
 			path = Password;
 			sourceTree = "<group>";
 		};
+		09C05AFA2E032AD8005679BC /* PasswordStatusView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PasswordStatusView;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				0931D4952E01C97500825BDA /* Password */,
+				09C05AFA2E032AD8005679BC /* PasswordStatusView */,
 				0931D4942E01C97500825BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +81,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				0931D4952E01C97500825BDA /* Password */,
+				09C05AFA2E032AD8005679BC /* PasswordStatusView */,
 			);
 			name = Password;
 			packageProductDependencies = (
